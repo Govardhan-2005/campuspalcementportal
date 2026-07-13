@@ -4,13 +4,22 @@ body{
     font-family:  sans-serif;
     background: #f5f5;
 }
+body{background-image:url("https://png.pngtree.com/thumb_back/fh260/background/20240709/pngtree-start-a-business-sucessful-career-image_15868749.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;}
+html, body {
+    margin: 0;
+    padding: 0;
+}
 .navbar{
     display:flex;
     align-items:center;
     justify-content:space-between;
     padding:20px 50px;
-    background-color:aqua;
+    background-color:transparent;
 }
+.card:hover{transform:scale(1.1);transition:0.3s;}
 .logo{color:white;}
 
 .nav-links{display:flex;list-style:none;}
@@ -21,4 +30,5 @@ body{
     transition:.3s;
  font-size:18px;
 }
+.card{width:200px;background:rgb(98, 94, 94);color:rgb(242, 231, 231);display:flex;margin-left:auto; margin-top:120px; padding:20px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1);}
 .nav-links a:hover{color:#38bdf8;}

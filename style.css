@@ -30,5 +30,5 @@ html, body {
     transition:.3s;
  font-size:18px;
 }
-.card{width:200px;background:rgb(98, 94, 94);color:rgb(242, 231, 231);display:flex;margin-left:auto; margin-top:120px; padding:20px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1);}
+.card{width:200px;background-color:gray !important;color:rgb(242, 231, 231);display:flex;margin-left:auto; margin-top:120px; padding:20px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1);}
 .nav-links a:hover{color:#38bdf8;}

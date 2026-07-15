@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background:#f4f6f9;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .hero{
+            height:220px;
+            background:url("background.jpg") center/cover;
+            border-radius:10px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+            font-size:35px;
+            font-weight:bold;
+            text-shadow:2px 2px 5px black;
+        }
+
+        .company-logo{
+            height:60px;
+            object-fit:contain;
+            background:white;
+            border-radius:8px;
+            padding:10px;
+            box-shadow:0 2px 5px rgba(0,0,0,.2);
+        }
+
+        .sidebar{
+            background:white;
+            border-radius:10px;
+            padding:20px;
+            box-shadow:0 2px 8px rgba(0,0,0,.1);
+        }
+
+        .job-card{
+            background:white;
+            border-radius:10px;
+            padding:20px;
+            margin-bottom:20px;
+            box-shadow:0 2px 8px rgba(0,0,0,.1);
+        }
+
+        footer{
+            background:#0d6efd;
+            color:white;
+            padding:20px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container mt-4">
+
+    <!-- Background Banner -->
+    <div class="hero mb-4">
+        Job Portal
+    </div>
+
+    <!-- Company Logos -->
+    <div class="row text-center mb-4">
+        <div class="col">
+            <img src="google.png" class="company-logo" alt="Google">
+        </div>
+
+        <div class="col">
+            <img src="ibm.png" class="company-logo" alt="IBM">
+        </div>
+
+        <div class="col">
+            <img src="yahoo.png" class="company-logo" alt="Yahoo">
+        </div>
+
+        <div class="col">
+            <img src="amazon.png" class="company-logo" alt="Amazon">
+        </div>
+    </div>
+
+    <div class="row">
+
+        <!-- Left Sidebar -->
+        <div class="col-md-3">
+            <div class="sidebar">
+                <h4>Job Search</h4>
+
+                <input type="text" class="form-control mb-3"
+                placeholder="Job Title">
+
+                <input type="text" class="form-control mb-3"
+                placeholder="Location">
+
+                <button class="btn btn-primary w-100">
+                    Search Jobs
+                </button>
+            </div>
+        </div>
+
+        <!-- Job Details -->
+        <div class="col-md-6">
+
+            <div class="job-card">
+                <h4>Software Engineer</h4>
+                <h6>Google</h6>
+                <p>
+                    Full-time • Hyderabad • ₹12 LPA
+                </p>
+
+                <button class="btn btn-success">
+                    Apply Now
+                </button>
+            </div>
+
+            <div class="job-card">
+                <h4>Java Developer</h4>
+                <h6>IBM</h6>
+                <p>
+                    Full-time • Bengaluru • ₹10 LPA
+                </p>
+
+                <button class="btn btn-success">
+                    Apply Now
+                </button>
+            </div>
+
+            <div class="job-card">
+                <h4>Frontend Developer</h4>
+                <h6>Yahoo</h6>
+                <p>
+                    Remote • ₹9 LPA
+                </p>
+
+                <button class="btn btn-success">
+                    Apply Now
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="col-md-3">
+
+            <div class="sidebar mb-4">
+                <h4>Filters</h4>
+
+                <select class="form-select mb-3">
+                    <option>Experience</option>
+                    <option>0-2 Years</option>
+                    <option>2-5 Years</option>
+                    <option>5+ Years</option>
+                </select>
+
+                <select class="form-select">
+                    <option>Job Type</option>
+                    <option>Full Time</option>
+                    <option>Part Time</option>
+                    <option>Internship</option>
+                </select>
+            </div>
+
+            <div class="sidebar">
+                <h4>Login</h4>
+
+                <input type="email"
+                class="form-control mb-3"
+                placeholder="Email">
+
+                <input type="password"
+                class="form-control mb-3"
+                placeholder="Password">
+
+                <button class="btn btn-primary w-100">
+                    Login
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Job Vacancies -->
+    <div class="mt-5">
+        <h3 class="mb-4">Latest Job Vacancies</h3>
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="job-card">
+                    <h5>Python Developer</h5>
+                    <p>Microsoft</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="job-card">
+                    <h5>Data Analyst</h5>
+                    <p>Amazon</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="job-card">
+                    <h5>Cloud Engineer</h5>
+                    <p>Oracle</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<footer class="text-center">
+    © 2025 Job Portal | Designed Professionally
+</footer>
+
+</body>
+</html>

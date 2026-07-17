@@ -46,11 +46,13 @@
         }
 
         .job-card{
-            background:white;
+            background:transparent;
+            color:white;
+            backdrop-filter:blur(10px);
             border-radius:10px;
             padding:20px;
             margin-bottom:20px;
-            box-shadow:0 2px 8px rgba(0,0,0,.1);
+            box-shadow:0 2px 8px rgba(239, 236, 236, 0.1);
         }
 
         footer{
@@ -74,12 +76,11 @@
     <!-- Company Logos -->
     <div class="row text-center mb-4">
         <div class="col">
-            <img src="google.png" class="company-logo" alt="Google">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0DtLtSqc6FtXUYtSaQ24eB8fr93DYXREJZSzSFj7X2A&s=10" class="company-logo" alt="Google">
         </div>
 
         <div class="col">
-            <img src="ibm.png" class="company-logo" alt="IBM">
-        </div>
+            <img src="ibm.png" class="company-logo" alt="IBM" >
 
         <div class="col">
             <img src="yahoo.png" class="company-logo" alt="Yahoo">
@@ -193,7 +194,7 @@
 
     <!-- Job Vacancies -->
     <div class="mt-5">
-        <h3 class="mb-4">Latest Job Vacancies</h3>
+        <h3 class="mb-4" style="color: white;">Latest Job Vacancies</h3>
 
         <div class="row">
 

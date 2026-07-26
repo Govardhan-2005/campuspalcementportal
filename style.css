@@ -12,11 +12,12 @@ html, body {
     margin: 0;
     padding: 0;
 }
-.info-card{  backdrop-filter: blur(10px);
+.info-card{  backdrop-filter: blur(5px);
     border: 5px solid white;
     align-items:center;
     text-align:center;
     width:500px;
+    COLOR:white;
     padding:20px;
     height:120px;
     background-color:transparent;

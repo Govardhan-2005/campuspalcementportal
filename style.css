@@ -37,6 +37,7 @@ html, body {
     align-items:center;
     justify-content:space-between;
     padding:20px 50px;
+    backdrop-filter: blur(10px);
     background-color:transparent;
 }
 .card:hover{transform:scale(1.1);transition:0.3s;}

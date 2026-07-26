@@ -15,6 +15,10 @@ html, body {
 .info-card{  backdrop-filter: blur(10px);
     border: 5px solid white;
     align-items:center;
+    text-align:center;
+    width:500px;
+    padding:20px;
+    height:120px;
     background-color:transparent;
 }
 .cars {

@@ -102,17 +102,25 @@
         <div class="col-md-3">
             <div class="sidebar">
                 <h4>Job Search</h4>
-                <form action="https://www.google.com/search" method="get" target="_blank">
-                <input type="text" class="form-control mb-3"
-                placeholder="Job Title">
+                <form action="https://www.google.com/search" method="GET" onsubmit="combineSearch()">
+    <input type="text" id="job" placeholder="Job Title" class="form-control mb-3">
 
-                <input type="text" class="form-control mb-3"
-                placeholder="Location">
+    <input type="text" id="location" placeholder="Location" class="form-control mb-3">
 
-                <button class="btn btn-primary w-100">
-                    Search Jobs
-                </button>
-                </form><br><br>
+    <input type="hidden" name="q" id="searchQuery">
+
+    <button type="submit" class="btn btn-primary w-100">
+        Search Jobs
+    </button>
+</form>
+
+<script>
+function combineSearch() {
+    document.getElementById("searchQuery").value =
+        document.getElementById("job").value + " jobs in " +
+        document.getElementById("location").value;
+}
+</script>
             </div>
         </div>
 

@@ -5,7 +5,7 @@
             background:gray;
             color:white;
             padding:20px;
-            margin-top:400px;
+            margin-top:600px;
             text-align:center;
         }
     </style>
@@ -29,13 +29,29 @@
             </ul>
         </nav>
     </header>
+    <div class="col-md-3 card">
+
+            <div class="sidebar mb-4">
+                
+                <div id="chart">
+                <input type="text" id="message" class="form-control mb-2" placeholder="Enter your message">
+                <button onclick="sendmessage()"class="btn btn-primary w-100">
+                    send
+                </button><p id="reply"></p></div>
+            </div>
+            <script>function sendMessage() {
+  const msg = document.getElementById("message").value;
+  document.getElementById("reply").innerText =
+    "You said: " + msg;
+}</script>
+
+        </div>
     <div class="row mt-5">
         <div class="col-md-4">
-        <div class="info-card">job</div></div>
+        <div class="info-card ">job</div></div>
         <div class="col-md-4">
         <div class="info-card">job</div></div>    
     </div>
-   <center> <div class="cars">this web site is for searching job and learning the progmming languages in an easy way</div></center >
 <footer>
     @2026-web page for professional learning and searching jobs
 </footer>  
